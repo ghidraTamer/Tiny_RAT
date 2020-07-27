@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/commandText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Command"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sendCommand"
+        app:layout_constraintEnd_toStartOf="@+id/sendCommand"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sendCommand"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="34dp"
+        android:onClick="onClick"
+        android:text="send"
+        app:layout_constraintBottom_toTopOf="@+id/sendFile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/commandText"
+        app:layout_constraintTop_toBottomOf="@+id/ConnectedStatus" />
+
+    <Button
+        android:id="@+id/sendFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="29dp"
+        android:onClick="onClick"
+        android:text="send File"
+        app:layout_constraintBottom_toBottomOf="@+id/fileNameText"
+        app:layout_constraintStart_toStartOf="@+id/sendCommand" />
+
+    <EditText
+        android:id="@+id/fileNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="255dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="File Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/IpAdderssText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="IpAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ConnectedStatus"
+        android:layout_width="207dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="36dp"
+        android:text="Connected :"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IpAdderssText" />
+
+    <Button
+        android:id="@+id/receiveFilebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:onClick="onClick"
+        android:text="Recv File"
+        app:layout_constraintStart_toStartOf="@+id/sendFile"
+        app:layout_constraintTop_toBottomOf="@+id/sendFile" />
+
+    <EditText
+        android:id="@+id/searchFileField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Search File"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/receiveFilebutton" />
+
+    <Button
+        android:id="@+id/searchButon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:onClick="onClick"
+        android:text="Search"
+        app:layout_constraintStart_toStartOf="@+id/receiveFilebutton"
+        app:layout_constraintTop_toBottomOf="@+id/receiveFilebutton" />
+
+    <EditText
+        android:id="@+id/pathField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Path"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchFileField" />
+
+    <Button
+        android:id="@+id/viewConnected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginBottom="146dp"
+        android:onClick="onClick"
+        android:text="View Connected Clients"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchFileField" />
+</androidx.constraintlayout.widget.ConstraintLayout>

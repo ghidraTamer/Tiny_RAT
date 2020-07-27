@@ -1,0 +1,7 @@
+﻿  Source.c
+C:\Users\coaie proaste\source\repos\Project7\Project7\Source.c(173,46): warning C4133: 'function': incompatible types - from 'int *' to 'char *'
+C:\Users\coaie proaste\source\repos\Project7\Project7\Source.c(179,46): warning C4133: 'function': incompatible types - from 'int *' to 'char *'
+C:\Users\coaie proaste\source\repos\Project7\Project7\Source.c(215,54): warning C4133: 'function': incompatible types - from 'int *' to 'const char *'
+C:\Users\coaie proaste\source\repos\Project7\Project7\Source.c(415,96): warning C4047: 'function': 'LPDWORD' differs in levels of indirection from 'LPDWORD *'
+C:\Users\coaie proaste\source\repos\Project7\Project7\Source.c(415,96): warning C4024: 'CreateThread': different types for formal and actual parameter 6
+  Project7.vcxproj -> C:\Users\coaie proaste\source\repos\Project7\Debug\Project7.exe
